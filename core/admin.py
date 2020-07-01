@@ -1,5 +1,5 @@
 from django.contrib import admin
-from core.models import Evento
+from core.models import evento
 # Register your models here.
 
 
@@ -8,4 +8,4 @@ class EventoAdmin(admin.ModelAdmin):
     list_filter = ('usuario', 'data_evento',)
 
 
-admin.site.register(Evento, EventoAdmin)
+admin.site.register(evento, EventoAdmin)
